@@ -4,6 +4,7 @@ body {
   width: 100%;
   font-family:Avenir;
   font-weight: 400;
+  color: #212427;
 }
 
 /* flex container for .left & .right classes */
@@ -97,6 +98,17 @@ img {
 .form-right {
   width: 48%;
 }
+
+ @media (max-width:768px) {
+  .form-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  .form-right, .form-left {
+      width: 100%;
+  }
+
+ }
 
 /* Standard format for input fields */
 
@@ -214,4 +226,24 @@ button {
   background-color: #149770;
   color: #FFFFFF;
   border: #149770;
+}
+
+/* Container for buttons */
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* flex for reset */
+
+.button-left {
+  width: 48%;
+}
+
+/* flex for submit */
+
+.button-right {
+  width: 48%;
 }
