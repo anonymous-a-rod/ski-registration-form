@@ -1,0 +1,217 @@
+html, 
+body {
+  height: 100%;
+  width: 100%;
+  font-family:Avenir;
+  font-weight: 400;
+}
+
+/* flex container for .left & .right classes */
+
+main {
+  display: flex;
+  width: 100vw;
+}
+
+h1 {
+  position: relative;
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+label {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* *this field is required* text */
+
+.alert {
+  font-size: 12px;
+  line-height: 32px;
+  color: #DD310C;
+  margin-top: -8px;
+}
+
+/* Left half of index page */
+
+.left {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right half of index page */
+
+.right {
+  width: 45%;
+}
+
+/* Large image on right side of screen */
+
+img {
+  object-fit: cover;
+  object-position: 100% 0;
+  width:100%;
+  height: 1140px;
+}
+
+/* Text overlaying picture */
+
+.epic {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  left: 60%;
+  font-size: 45px;
+  line-height: 69px;
+  filter: drop-shadow(2px 2px 2px white);
+}
+
+/* Container for Email and Password */
+
+.form-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* flex for Email */
+
+.form-left {
+  width: 48%;
+}
+
+/* flex for Password */
+
+.form-right {
+  width: 48%;
+}
+
+/* Standard format for input fields */
+
+input.text,
+select,
+.name {
+  width: 100%;
+  height: 50px;
+  background-color:#E2E5ED;
+  border:none;
+  border-radius: 8px;
+  text-indent: 8px;
+  font-size: 16px;
+}
+
+/* Border around name text input */
+
+.name {
+  outline: 1px solid black;
+  outline-offset: 2px;
+}
+
+/* Custom style for checkboxes and radio inputs */
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: 18px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #C4C4C4;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #C4C4C4;
+}
+
+input[type='radio']:checked:after {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid #C4C4C4;
+}
+
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #C4C4C4;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #C4C4C4;
+}
+
+input[type='checkbox']:checked:after {
+    width: 11px;
+    height: 11px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid #C4C4C4;
+}
+
+/* Biography Section */
+
+textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 90px;
+  background-color:#E2E5ED;
+  border:none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Submit and Reset buttons at the end of the form */
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.reset {
+  color: #149770;
+  background-color: #FFFFFF;
+  border: #149770 1px solid;
+}
+
+.submit {
+  background-color: #149770;
+  color: #FFFFFF;
+  border: #149770;
+}

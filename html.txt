@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The ultimate ski adventure</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <div class="left">
+      <h1>Register for the ultimate ski adventure</h1>
+      
+
+      <form>
+        <h2>Your basic info</h2>
+        <label for="name">Name and surname <sup>*</sup></label><br>
+        <input class="name" id="name" type="name"><br><br>
+
+        <div class="form-container">
+          <div class="form-left">
+            <label for="email">Email <sup>*</sup></label><br>
+            <input id="email" type="email" placeholder="example@mail.com" class="text">
+            <p class="alert">this field is required</p>
+          </div>
+          <div class="form-right">
+            <label for="password">Password <sup>*</sup></label><br>
+            <input id="password" type="password" placeholder="****" class="text">
+          </div>
+        </div>
+        <label>Age</label><br>
+        <input type="radio" id="under18" name="age-answer"><label for="under18">Under 18</label><br>
+        <input type="radio" id="over18" name="age-answer"><label for="over18">18 and over</label>
+
+        <h2>Tell us about yourself</h2>
+        <label for="bio">Your biography<label><br>
+            <textarea id="bio"></textarea><br>
+
+            <label for="cars">Select location</label><br>
+            <select id="location" name="location">
+              <option value="aspen">Aspen</option>
+              <option value="jackson-hole">Jackson Hole</option>
+              <option value="park-city">Park City</option>
+              <option value="Vail">Vail</option>
+            </select><br><br>
+
+
+            <label>What equipment would you like to rent?</label><br>
+
+            <input type="checkbox" id="skis"><label>Skis</label><br>
+            <input type="checkbox" id="helmet"><label>Helmet</label><br>
+            <input type="checkbox" id="goggles"><label>Goggles</label><br>
+            <input type="checkbox" id="boots"><label>Ski boots</label><br>
+            <input type="checkbox" id="poles"><label>Ski poles</label><br><br>
+
+            <div class="form-container">
+              <div class="form-left">
+                <button id="reset" class="reset">Reset</button>
+              </div>
+              <div class="form-right">
+                <button id="submit" class="submit">Submit</button>
+              </div>
+            </div>
+
+      </form>
+
+    </div>
+
+    <div class="right">
+      <h2 class="epic">Epic experience<br>
+        in the snow</h2>
+      <img src="/assets/ski.jpeg" alt="ski trick" />
+
+
+    </div>
+  </main>
+</body>
+
+</html>
