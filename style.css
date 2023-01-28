@@ -1,17 +1,22 @@
-html, 
-body {
-  height: 100%;
-  width: 100%;
-  font-family:Avenir;
-  font-weight: 400;
-  color: #212427;
-  font-family: 'Nunito Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
 }
 
-/* flex container for .left & .right classes */
+html, 
+body {
+  font-family:'Sen','Nunito Sans', sans-serif;
+  font-weight: 400;
+  color: #212427;
+  overflow-x: hidden;
+}
 
-main {
+body{
   display: flex;
+  justify-content: center;
+  min-width: 100vw;
   width: 100vw;
 }
 
@@ -47,7 +52,9 @@ label {
 /* Left half of index page */
 
 .left {
-  width: 45%;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,7 +62,8 @@ label {
 /* Right half of index page */
 
 .right {
-  width: 45%;
+  width: 50%;
+
 }
 
 /* Large image on right side of screen */
@@ -64,7 +72,8 @@ img {
   object-fit: cover;
   object-position: 100% 0;
   width:100%;
-  height: 1140px;
+  height: 100%;
+
 }
 
 /* Text overlaying picture */
@@ -101,6 +110,7 @@ img {
 }
 
  @media (max-width:768px) {
+
   .form-container {
       flex-direction: column;
       align-items: center;
@@ -109,6 +119,16 @@ img {
       width: 100%;
   }
 
+ }
+
+ @media (max-width:600px) {
+
+  .right {
+    display: none;
+  }
+  .left{
+    width: 90%;
+  }
  }
 
 /* Standard format for input fields */
